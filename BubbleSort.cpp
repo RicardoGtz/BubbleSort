@@ -9,7 +9,7 @@ void createFile(char c[],int n);
 void loadFile(char c[]);
 
 int main(int argc, char const *argv[]) {
-  int n=5;
+  int n=500;
   char c[]="Array1.txt";
   createFile(c,n);
   loadFile(c);
@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
 				array[j+1]^=array[j];
 				array[j]^=array[j+1];
       }
-  ti = clock();//Comienza a medir el tiempo
+  tf = clock();//Termina de medir el tiempo
   //Imprime el arreglo ordenado
   for (int i = 0; i < n; ++i){
  			printf("array[%d]= %d\n",i,array[i]);
